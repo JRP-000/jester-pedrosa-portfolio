@@ -138,3 +138,6 @@
 .hero-professional[data-motion="running"] .hero-orbits,.hero-professional[data-motion="running"] .hero-spark .spark{animation-play-state:running}
 .motion-paused .hero-professional .hero-orbits,.motion-paused .hero-professional .hero-spark .spark{animation-play-state:paused}
 @media(prefers-reduced-motion:reduce){.hero-professional .hero-orbits,.hero-professional .hero-spark .spark{animation:none}}
+
+/* Anchor the signature above the divider with a fixed clear gap. */
+.hero-professional .hero-bottom .hero-signature{right:0;bottom:calc(100% + 16px);line-height:1.4}
