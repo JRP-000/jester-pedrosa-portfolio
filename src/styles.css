@@ -81,3 +81,28 @@
 .computer-screen span{background:#c1d2f3;color:#173a95;padding:5px;border-bottom:0;font-weight:700}
 .computer-screen pre{background:#0b2145;padding:8px;font-size:.85em}
 .computer-stand{width:36%;height:10%;background:#3267dc}
+
+/* Website index shares the QA table's typography and blue hairlines. */
+.website-table-wrap{margin-top:60px;overflow-x:auto;width:100%;scrollbar-color:#8aa9df #edf4ff}
+.website-table{width:100%;border-collapse:collapse;text-align:left;table-layout:fixed}
+.website-table thead{border-block:1px solid var(--line)}
+.website-table thead th{padding:18px 20px;font:10px 'DM Mono';letter-spacing:.1em;text-transform:uppercase;font-weight:400;color:var(--muted)}
+.website-table thead th:first-child{width:23%;padding-left:0}.website-table thead th:nth-child(2){width:40%}.website-table thead th:nth-child(3){width:24%}.website-table thead th:last-child{width:13%;padding-right:0}
+.website-table tbody tr{border-bottom:1px solid var(--line)}
+.website-table tbody td,.website-table tbody th{padding:28px 20px;vertical-align:top;font-weight:400}
+.website-table tbody td:first-child{padding-left:0}.website-table tbody td:last-child{padding-right:0}
+.website-table-preview{display:block;overflow:hidden;background:var(--bg)}
+.website-table-preview img{display:block;width:100%;height:auto;aspect-ratio:1.65;object-fit:cover;object-position:top;transition:transform .25s var(--ease)}
+.website-table h3{font:clamp(14px,1.35vw,22px)/1.6 'Michroma';color:var(--blue);overflow-wrap:anywhere}
+.website-table-type{font-size:14px;line-height:1.7;color:var(--muted)}
+.website-table .website-visit{font-size:13px;gap:8px;white-space:nowrap}
+.website-table-details{margin-top:10px;font-size:13px;line-height:1.75}
+.website-table-details summary{cursor:pointer;min-height:44px;align-content:center;width:fit-content;color:var(--blue);text-underline-offset:4px}
+.website-table-details p{margin-top:10px;color:var(--ink);font-size:14px;line-height:1.8}
+.website-table-details ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px 14px;margin:16px 0 0;padding:0;color:var(--muted);font-size:12px}
+.website-table-details li{border-bottom:1px solid var(--line);padding-bottom:3px}
+.website-table-note{font-size:12px;line-height:1.7;color:var(--muted);margin-top:22px}
+@media(hover:hover) and (pointer:fine){.website-table tbody tr:hover{background:#e3edff}.website-table-preview:hover img{transform:scale(1.035)}.website-table-details summary:hover{text-decoration:underline}}
+@media(max-width:850px){.website-table{min-width:700px}.website-table-wrap{margin-top:35px;padding-bottom:10px}.website-table h3{font-size:15px}.website-table tbody td,.website-table tbody th{padding-block:24px}}
+@media(prefers-reduced-motion:reduce){.website-table-preview img{transition:none}}
+.website-table-wrap{position:relative}
