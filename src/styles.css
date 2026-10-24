@@ -141,3 +141,11 @@
 
 /* Anchor the signature above the divider with a fixed clear gap. */
 .hero-professional .hero-bottom .hero-signature{right:0;bottom:calc(100% + 16px);line-height:1.4}
+
+/* Keep the bottom rule away from the signature and the floating controls. */
+.hero-professional .hero-bottom{border-top:0;padding-top:22px;bottom:max(7%,80px)}
+.hero-professional .hero-bottom:before{content:'';position:absolute;top:0;left:0;right:140px;height:1px;background:var(--line)}
+.hero-professional .hero-bottom .hero-signature{bottom:calc(100% - 11px);right:0;background:var(--bg);padding-left:20px}
+/* Orbital decoration stays outside the central reading area. */
+.hero-professional .hero-orbits{mask-image:radial-gradient(ellipse 43% 44% at 50% 50%,transparent 80%,#000 100%)}
+@media(max-width:700px){.hero-professional .hero-bottom{bottom:85px}.hero-professional .hero-bottom:before{right:105px}.hero-professional .hero-bottom .hero-signature{bottom:calc(100% - 9px);padding-left:14px}}
